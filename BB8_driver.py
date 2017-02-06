@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+# Code from: https://github.com/jchadwhite/SpheroBB8-python.git
 
 from bluepy import btle
 # import bluetooth
@@ -236,12 +236,12 @@ class BTInterface(btle.DefaultDelegate):
 
 
 class Sphero(threading.Thread):
-    def __init__(self, target_name='Sphero'):
+    def __init__(self, target_name='Sphero', deviceAddress = 'FC:1F:25:97:03:AB'):
         threading.Thread.__init__(self)
         self.target_name = target_name
         self.bt = None
         # Use "sudo hcitool lescan" to find BB8's MAC address input it at deviceAddress = 
-        self.deviceAddress = 'DF:79:DD:9C:B6:1D'
+        self.deviceAddress = deviceAddress
         self.shutdown = False
         self.is_connected = False
         self.mask_list = None
