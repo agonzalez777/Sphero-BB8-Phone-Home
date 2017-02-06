@@ -22,7 +22,6 @@ BB-8's head also turns to the direction of the Satellite (so you know where to l
 2. Point BB-8 so that BB-8's head is pointing north
 2. Run "`./spheroBB8_phone_home.py (Mac Address you obtained from the previous step) (Current Lat) (Current Long)`"
  
- 
 ***Included Scripts:***
 
 **spheroBB8_phone_home.py**
